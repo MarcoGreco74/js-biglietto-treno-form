@@ -46,7 +46,7 @@ function showSpinner(){
     btnSpinner.style.display = 'block';
     btnSubmit.style.display = 'none';
 }
-function showDati(){
+function showCalcola(){
     btnSpinner.style.display = 'none';
     btnSubmit.style.display = 'block';
 }
@@ -79,7 +79,7 @@ btnSubmit.addEventListener('click', (e)=>{
             document.getElementById("sconto").innerHTML = 'Sconto applicato '+((dati.age == "0-17 anni") ? 20 : ((dati.age == "da 65 anni") ? 40 : 'nessuno sconto'))+'%';
             document.getElementById("errorMsg").innerHTML = '<strong>'+errMsg+'</strong>';
         }, 3000);
-        setTimeout(showDati, 3000);
+        setTimeout(showCalcola, 3000);
     }else{
         alert('Dati inseriti non corretti !!!')
     }

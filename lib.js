@@ -29,7 +29,7 @@ function convalidaKm(km){
 function convalidaAge(age){
     age = dati.age = document.querySelector("select").value;
     if(age !== "0-17 anni" && age !== "da 65 anni"){
-        prezzo = (prezzoAlKm * dati.quantiKm);                 //
+        prezzo = (prezzoAlKm * dati.quantiKm);                 
         res = '€ '+prezzo.toFixed(2).replace(".", ",");
     }
     if(age == "0-17 anni"){
@@ -41,9 +41,6 @@ function convalidaAge(age){
         res = '€ '+prezzo.toFixed(2).replace(".", ",");
     }
     return age;
-}
-function convalidaCondition(condition){
-    return condition;
 }
 function showSpinner(){
     btnSpinner.style.display = 'block';
